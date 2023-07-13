@@ -1,0 +1,93 @@
+
+
+
+.input-fields{
+    margin-block: clamp(.5rem , 5vw , 2rem);
+}
+
+.input-fields>label , .input-fields > input{
+    display: block;
+    width: 50%;
+}
+
+ .input-fields>div{
+	 width: 50%;
+ }
+
+ .input-fields>div>input{
+	 width: 100%;
+ }
+
+.input-fields>label {
+    color: var(--lgreen);
+    font-weight: 400;
+}
+
+.input-fields > input , .input-fields>div>input{
+    outline: none;
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;  
+    background-color: rgba(15, 14, 14, 0.9);
+    font-size: var(--font-size-base);
+    font-weight: 700;
+	font-family: 'Courier Prime', monospace;
+    padding: clamp(.3rem , 3vw , .7rem) clamp(.4rem, 3vw , .9rem) ;
+    color: var(--lgreen);
+    letter-spacing: 2px;
+    border: 1px solid #0f0f0f00;
+    transition: all .3s;
+}
+
+.input-fields > input:focus  ,.input-fields>div>input:focus{
+    border: 1px solid var(--ngreen);
+    background-color: #0f0e0e;
+    box-shadow: 0px 2px 5px var(--ngreen);
+}
+
+.input-fields > label{
+    font-size: var(--font-size-mbase);
+    color: var(--lgreen);
+}
+
+.our-eye-icon{
+	position:absolute;
+	top: 18%;
+	right: 4%;
+	padding:3px;
+	color: var(--ldarkGreen);
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.register-p{
+    margin: clamp(.3rem, 3vw ,.6rem) 0px;
+    font-size: var(--font-size-base);
+    color: #5BB318;
+}
+
+.register-p > a{
+    color: var(--ngreen);
+    font-weight: bold;
+}
+
+@media (max-width : 650px) {
+    .main-cont > div {
+        width:85%;
+    }
+    
+    .input-fields>label , .input-fields > input  {
+        width: 100%;
+    }
+    
+     .input-fields>div{
+	 	width: 100%;
+ 	}
+    
+    
+}

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,700&display=swap');
+
+:root{
+	--font-size-sm: clamp(0.64rem, 0.05vw + 0.63rem, 0.67rem);
+	--font-size-msm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+	--font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+	--font-size-mbase: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+	--font-size-md: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+	--font-size-lg: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+	--font-size-xl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+	--font-size-xxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+	--font-size-xxxl: clamp(3.81rem, 5.18vw + 2.52rem, 6.66rem);
+
+	--black: #0f0e0e;
+	--drkGreen: #125c13;
+	--ngreen: #16FF00;
+	--lgreen: #3EC70B;
+    --ldarkGreen : #179619;
+    --nred : #	#FF1818;
+}
+
+/*
+colors :
+black : 	0F0E0E
+dark-green- 125C13
+ligh tgreen-3EC70B
+neon green- 16FF00
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--black);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--ldarkGreen);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--drkGreen);
+  }
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+body{
+	background-color: var(--black);
+	color: white;
+	height: 100%;
+}
+
+.app-font{
+	font-family: 'Courier Prime', monospace;
+}
+
+ /* replace old one this with curr  */
+.main-cont{
+	display: flex;
+	width: 100%;
+	min-height: 100vh;
+	height : 100%;
+	justify-content: center;
+	align-items: center;
+	border: 3px solid var(--ngreen);
+	background-image: url(../SvgBackgrounds/CircuitBg.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.main-cont > div{
+
+	width: 70%;
+	min-width: 290px;
+	max-width: 1900px;
+	margin: 0px auto;
+    margin-block:clamp(1rem , 7vw , 4rem);
+}
+
+.main-cont>div>h2{
+	color: var(--ngreen);
+	font-size: var(--font-size-xl);
+	margin-block: clamp(.3rem , 10vw , 1rem) ;
+}
+
+.main-cont>div>p{
+	color: var(--lgreen);
+	margin-block: clamp(.5rem , 3vw , 2rem);
+}
+
+
+
+.btn-design{
+	
+	display: inline-block;
+	outline: 0;
+	text-align: center;
+	cursor: pointer;
+	padding: .5rem clamp(.7em, 2vw ,1.5em);
+	border: 0;
+	color: #fff;
+	font-size: 17.5px;
+	border: 2px solid transparent;
+	border-color: var(--lgreen);
+	color: var(--lgreen);
+	background: transparent;
+	font-weight: 800;
+	line-height: 30px;
+	transition: background,color .2s ease-in-out;
+	
+}
+
+.btn-design:hover {
+	background-color: var(--lgreen);
+	color: var(--black);
+	box-shadow: 0px 0px 20px var(--lgreen);
+}
+
+.data-table{
+	color :var(--ngreen);
+	font-size: var(--font-size-base);
+	width :100%;
+	border-collapse: collapse;
+}
+
+.data-table th{
+	font-size:var(--font-size-mbase);
+}
+
+.data-table th , .data-table td {
+	text-align: left;
+	padding : clamp(.4em , 5vw , .7em) .5em;
+	width : 50%;
+}
+
+.data-table tr {
+	border-bottom: 3px solid rgba(0 , 0, 0, 0);
+	transition : all 0.3s;
+}
+
+.data-table tr:hover {
+	border-bottom : 3px solid var(--lgreen);
+	background-color: var(--black);
+	font-weight :700;
+}
